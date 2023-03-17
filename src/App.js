@@ -1,29 +1,20 @@
-import logo from './logo.svg';
+import Navbar from './components/Navigation';
 import './App.css';
 
-function App() {
+const App = () => {
+  // store.dispatch(fetchRockets());
+  // store.dispatch(getMissons());
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route index element={<Navigate to="Navbar" replace />} />
+        <Route path="/myProfile/*" element={<MyProfile />} />
+        <Route path="/rockets" element={<Rockets />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route path="*" element={<div>NotFound</div>} />
+      </Routes>
+    </>
   );
-}
-
+};
 export default App;
