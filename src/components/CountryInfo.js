@@ -25,7 +25,7 @@ const CountryInfo = () => {
         setInterval(() => {
           const now = DateTime.now();
           clockElement.textContent = now.toLocaleString(
-            DateTime.DATETIME_FULL_WITH_SECONDS
+            DateTime.DATETIME_FULL_WITH_SECONDS,
           );
         }, 1000);
       };
@@ -43,28 +43,34 @@ const CountryInfo = () => {
           </div>
           <ul className="details">
             <li className="detail">
-              <span className="modalName">Capital:</span>{' '}
+              <span className="modalName">Capital:</span>
+              {' '}
               <span className="modalValue">{country.capital}</span>
             </li>
             <li className="detail">
-              <span className="modalName">Population:</span>{' '}
+              <span className="modalName">Population:</span>
+              {' '}
               <span className="modalValue">
                 {country.population.toLocaleString()}
               </span>
             </li>
             <li className="detail">
-              <span className="modalName">Currencies:</span>{' '}
+              <span className="modalName">Currencies:</span>
+              {' '}
               <span className="modalValue">
                 {Object.values(country.currencies).map((currency) => (
                   <span key={currency.symbol}>
-                    {currency.symbol} -&nbsp;
+                    {currency.symbol}
+                    {' '}
+                    -&nbsp;
                     {currency.name}
                   </span>
                 ))}
               </span>
             </li>
             <li className="detail">
-              <span className="modalName">Timezones:</span>{' '}
+              <span className="modalName">Timezones:</span>
+              {' '}
               <span className="modalValue">
                 {country.timezones.map((timezone) => (
                   <span key={timezone} className="timezone">
@@ -74,7 +80,8 @@ const CountryInfo = () => {
               </span>
             </li>
             <li>
-              <p className="modalName">Local time and date:</p>{' '}
+              <p className="modalName">Local time and date:</p>
+              {' '}
               <span className="modalValue" id="clock" />
             </li>
           </ul>
