@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <NavLink to="/" className="link">
-        {location.pathname !== '/' && <FiChevronLeft className="back_btn" />}
+        {location.pathname !== '/' && <FiChevronLeft className="back_button" />}
       </NavLink>
 
       <Outlet />

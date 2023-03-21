@@ -1,39 +1,108 @@
-.App {
+/* Navbar section */
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  list-style-type: none;
+  padding: 0;
+}
+
+.back_button {
+  color: black;
+  width: 30px;
+  height: 30px;
+  padding: 0.5rem;
+}
+
+.title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdownMenu {
+  margin: 0 2rem;
+  border: solid 0.2rem grey;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* First page */
+
+.country {
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 200px;
+  height: 100%;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #245b6b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* Details section */
+
+.countryInformation {
+  display: flex;
+  flex-direction: column;
+  background-color: #439ab2;
+  min-height: 100vh;
   color: white;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.details {
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+a {
+  text-decoration: none;
+}
 
-  to {
-    transform: rotate(360deg);
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalName {
+  font-weight: bold;
+}
+
+.modalValue {
+  font-size: 1.5rem;
+}
+
+.timezone::after {
+  content: ', ';
+}
+
+.timezone:last-child::after {
+  content: '';
+}
+
+.flag {
+  width: 50%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

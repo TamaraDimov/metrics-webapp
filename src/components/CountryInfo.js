@@ -18,17 +18,20 @@ const CountryInfo = () => {
   const country = countries.find((c) => c.name === countryId);
 
   useEffect(() => {
-    const clockElement = document.getElementById('clock'); // moved inside useEffect
-    const runInterval = () => {
-      setInterval(() => {
-        const now = DateTime.now();
-        clockElement.textContent = now.toLocaleString(
-          DateTime.DATETIME_FULL_WITH_SECONDS,
-        );
-      }, 1000);
-    };
-    runInterval();
-  }, []); // added empty dependency array
+    const clockElement = document.getElementById('clock');
+
+    if (clockElement) {
+      const runInterval = () => {
+        setInterval(() => {
+          const now = DateTime.now();
+          clockElement.textContent = now.toLocaleString(
+            DateTime.DATETIME_FULL_WITH_SECONDS,
+          );
+        }, 1000);
+      };
+      runInterval();
+    }
+  }, []);
 
   return (
     <>
@@ -77,9 +80,9 @@ const CountryInfo = () => {
               </span>
             </li>
             <li>
-              <span id="clock" />
+              <p className="modalName">Local time and date:</p>
               {' '}
-              {/* added element with ID */}
+              <span className="modalValue" id="clock" />
             </li>
           </ul>
           <div />
