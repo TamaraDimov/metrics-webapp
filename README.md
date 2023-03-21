@@ -78,7 +78,7 @@ After you're finished please remove all the comments and instructions!
 
 - [Live Demo Link](https://world-info-up5h.onrender.com)
 
-- [Project presentation comming soon]()
+- [Project presentation comming soon](https://www.loom.com/share/dac593360be441f9b8392b614c2af300)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
