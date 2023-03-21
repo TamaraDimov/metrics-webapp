@@ -9,7 +9,7 @@ describe('Details', () => {
       .create(
         <Provider store={store}>
           <CountryInfo />
-        </Provider>
+        </Provider>,
       )
       .toJSON();
     expect(detail).toMatchSnapshot();

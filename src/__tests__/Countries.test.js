@@ -12,7 +12,7 @@ describe('Navbar', () => {
           <BrowserRouter>
             <Countries />
           </BrowserRouter>
-        </Provider>
+        </Provider>,
       )
       .toJSON();
     expect(nav).toMatchSnapshot();

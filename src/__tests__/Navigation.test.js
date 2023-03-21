@@ -12,7 +12,7 @@ describe('Navbar', () => {
           <BrowserRouter>
             <Navbar />
           </BrowserRouter>
-        </Provider>
+        </Provider>,
       )
       .toJSON();
     expect(nav).toMatchSnapshot();
