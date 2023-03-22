@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Navbar renders component correctly 1`] = `
+<div>
+  <div
+    class="navbar"
+  >
+    <a
+      aria-current="page"
+      class="link active"
+      href="/"
+    />
+  </div>
+</div>
+`;
+
 exports[`Navbar testing render component 1`] = `
 <div
   className="navbar"

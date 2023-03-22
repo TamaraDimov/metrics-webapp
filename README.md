@@ -212,7 +212,7 @@ If you like this project please give it a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank Microverse for granting me the knowledge to do this.
+We would like to thank Nelson Sakwa the author of the original design and Microverse for granting me the knowledge to do this.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

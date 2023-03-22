@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`CountryInfo renders component correctly 1`] = `<div />`;
+
 exports[`Details should render the component 1`] = `null`;

@@ -1,20 +1,18 @@
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from '../redux/store';
 import Countries from '../components/Countries';
 
-describe('Navbar', () => {
-  it('testing render component', () => {
-    const nav = renderer
-      .create(
-        <Provider store={store}>
-          <BrowserRouter>
-            <Countries />
-          </BrowserRouter>
-        </Provider>,
-      )
-      .toJSON();
-    expect(nav).toMatchSnapshot();
+describe('Countries', () => {
+  it('renders component correctly', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <Countries />
+        </BrowserRouter>
+      </Provider>,
+    );
+    expect(container).toMatchSnapshot();
   });
 });

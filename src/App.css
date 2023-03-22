@@ -1,3 +1,7 @@
+* {
+  font-family: 'Gill Sans', sans-serif;
+}
+
 /* Navbar section */
 
 .countries {
@@ -16,6 +20,7 @@
 
 .title {
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
 .dropdownMenu {
@@ -49,6 +54,10 @@
   background-color: #245b6b;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+}
+
+.countryName {
+  font-family: 'Lato', sans-serif;
 }
 
 /* Details section */
