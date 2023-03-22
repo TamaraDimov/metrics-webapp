@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCountries } from '../redux/countrySlice';
 import Country from './Country';
+import worldMap from '../img/worldM.png';
 
 const Countries = () => {
   const dispatch = useDispatch();
@@ -17,6 +18,7 @@ const Countries = () => {
 
   return (
     <div>
+      <img src={worldMap} alt="worls map" className="logo" />
       <h1 className="title">All Countries</h1>
       <div className="dropdownMenu">
         <select
