@@ -1,8 +1,21 @@
 * {
+  background-color: #439ab2;
   font-family: 'Gill Sans', sans-serif;
 }
 
 /* Navbar section */
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px;
+}
+
+.iconOne,
+.iconTwo {
+  padding-left: 30px;
+  font-size: 30px;
+}
 
 .countries {
   display: grid;
@@ -58,6 +71,11 @@
 
 .countryName {
   font-family: 'Lato', sans-serif;
+  background-color: #245b6b;
+}
+
+.country p {
+  background-color: #245b6b;
 }
 
 /* Details section */
