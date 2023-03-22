@@ -1,0 +1,158 @@
+* {
+  background-color: #439ab2;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+/* Navbar section */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  align-self: center;
+  width: 75vw;
+  height: 75vh;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px;
+  margin-bottom: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.iconOne,
+.iconTwo {
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  list-style-type: none;
+  padding: 0;
+}
+
+.back_button {
+  color: black;
+  width: 30px;
+  height: 30px;
+  padding: 0 30px;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.dropdownMenu {
+  margin: 0 2rem;
+  border: solid 0.2rem grey;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+}
+
+/* First page */
+
+.country {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 200px;
+  height: 100%;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #245b6b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.countryName {
+  font-family: 'Lato', sans-serif;
+  background-color: #245b6b;
+}
+
+.country p {
+  background-color: #245b6b;
+}
+
+/* Details section */
+
+.countryInformation {
+  display: flex;
+  flex-direction: column;
+  background-color: #439ab2;
+  min-height: 100vh;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalName {
+  font-weight: bold;
+}
+
+.modalValue {
+  font-size: 1.5rem;
+}
+
+.timezone::after {
+  content: ', ';
+}
+
+.timezone:last-child::after {
+  content: '';
+}
+
+.flag {
+  width: 50%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
