@@ -76,7 +76,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo and project presentation <a name="live-demo"></a>
 
-- [Live Demo Link](https://world-info-up5h.onrender.com)
+- [Live Demo Link](https://worldmapinfo.onrender.com)
 
 - [Project presentation comming soon](https://www.loom.com/share/2cc1f9a8e3bc4158b51e353302dd24a3)
 
