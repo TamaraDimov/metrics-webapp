@@ -11,7 +11,7 @@ describe('Navbar', () => {
         <BrowserRouter>
           <Navbar />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
     expect(container).toMatchSnapshot();
   });

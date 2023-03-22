@@ -11,7 +11,7 @@ describe('Countries', () => {
         <BrowserRouter>
           <Countries />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
     expect(container).toMatchSnapshot();
   });

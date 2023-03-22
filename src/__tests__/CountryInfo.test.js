@@ -8,7 +8,7 @@ describe('CountryInfo', () => {
     const { container } = render(
       <Provider store={store}>
         <CountryInfo />
-      </Provider>
+      </Provider>,
     );
     expect(container).toMatchSnapshot();
   });
