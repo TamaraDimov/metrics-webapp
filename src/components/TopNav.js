@@ -6,6 +6,7 @@ function HomePageNav() {
   return (
     <div>
       <nav className="nav">
+        <h3>General Country Information</h3>
         <div className="icons">
           <div className="iconOne">
             <BiMicrophone />
