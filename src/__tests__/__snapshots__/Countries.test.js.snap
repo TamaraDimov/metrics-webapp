@@ -2,7 +2,14 @@
 
 exports[`Countries renders component correctly 1`] = `
 <div>
-  <div>
+  <div
+    class="main"
+  >
+    <img
+      alt="worls map"
+      class="logo"
+      src="worldM.png"
+    />
     <h1
       class="title"
     >
