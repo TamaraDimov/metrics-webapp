@@ -4,9 +4,17 @@
 }
 
 /* Navbar section */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .logo {
-  width: 100vw;
-  height: auto;
+  align-self: center;
+  width: 75vw;
+  height: 75vh;
 }
 
 .icons {

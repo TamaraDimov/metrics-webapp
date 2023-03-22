@@ -17,7 +17,7 @@ const Countries = () => {
   }, [countries, dispatch]);
 
   return (
-    <div>
+    <div className="main">
       <img src={worldMap} alt="worls map" className="logo" />
       <h1 className="title">All Countries</h1>
       <div className="dropdownMenu">
