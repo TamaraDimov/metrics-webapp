@@ -58,7 +58,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 World Info <a name="about-project"></a>
 
-**World Info** metrics web app is a React project developed as part of Microverse React solo project activity. The project is developed using React and Redux toolkits. Data is obtained from API. On this web page, you can see information about each country in the world (capital city, population, currencies, timezone and local time and date)
+**World Info** metrics web app is a React project developed as part of Microverse React solo project activity. The project is developed using React and Redux toolkits. Data is obtained from API. On this web page, the User can see information about each country in the world (capital city, population, currencies, timezone and local time and date)
 
 ## 🛠 Built With <a name="built-with"></a>
 
